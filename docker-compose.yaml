@@ -1,0 +1,12 @@
+version: "3"
+services:
+  srv:
+    image: qmwd2006/openwrt-docker
+    privileged: true
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./ws:/ws
+    ports:
+      - "3333:80"
+      - "3080:88"
