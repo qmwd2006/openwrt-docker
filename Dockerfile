@@ -1,6 +1,6 @@
 FROM scratch
 
-ARG version=23.05.2
+ARG version
 ADD ./openwrt-$version-x86-64-rootfs.tar.gz /
 ADD ./patch /
 
